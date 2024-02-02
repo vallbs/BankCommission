@@ -1,11 +1,11 @@
 # BankCommission
 
-Calculation of bank commission fees
-=======
+# Calculation of bank commission fees
 
 Calculation of bank commission fees
 
 ## Running the Application
+
 ```bash
 npm start
 ```
