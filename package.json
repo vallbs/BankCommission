@@ -1,9 +1,11 @@
 {
+    "type": "module",
     "name": "bank-commission",
     "version": "1.0.0",
     "description": "",
     "main": "app.js",
     "scripts": {
+        "start": "node src/app.js",
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
         "format": "prettier --write ."
