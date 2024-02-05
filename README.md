@@ -12,6 +12,14 @@ npm start
 
 ## Code Quality and Formatting
 
+## Running Tests
+
+To run the test suite, execute the following command:
+
+```bash
+npm test
+```
+
 ### Run ESLint
 
 ```bash
