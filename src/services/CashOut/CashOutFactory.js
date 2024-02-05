@@ -8,7 +8,7 @@ export default class CashOutFactory {
         this.periodOperationsService = periodOperationsService;
     }
 
-    getSrtategy() {
+    getStrategy() {
         switch (this.payload.user_type) {
             case USER_TYPE.NATURAL:
                 return new NaturalUserCashOutFee(

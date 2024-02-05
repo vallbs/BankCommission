@@ -20,11 +20,7 @@ export default class CommissionFee {
             const strategy = typeFactory.getStrategy();
             const fee = strategy.calculateFee();
 
-            return {
-                type: row.type,
-                amount: row.operation.amount,
-                fee: roundFee(fee),
-            };
+            return roundFee(fee);
         });
 
         periodOperationsService.clearPeriodOperations();

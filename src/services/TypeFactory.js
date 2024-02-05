@@ -20,7 +20,7 @@ export default class TypeFactory {
                     this.periodOperationsService,
                 );
 
-                return cashOutFactory.getSrtategy();
+                return cashOutFactory.getStrategy();
             }
             default:
                 throw new Error('Unknown type!');

@@ -4,4 +4,4 @@ import CommissionFee from './services/CommissionFee.js';
 const commissionFee = new CommissionFee(DataService);
 const calculatedCommissionFees = commissionFee.calculate();
 
-console.table(calculatedCommissionFees);
+console.log(calculatedCommissionFees);
