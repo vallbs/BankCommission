@@ -24,9 +24,10 @@ export default class ChunkDataService {
         try {
             this.createReadStream();
 
+            // eslint-disable-next-line no-restricted-syntax
             for await (const line of this.rl) {
                 if (line.trim() === '[' || line.trim() === ']') {
-                    // eslint-disable-line no-continue
+                    // eslint-disable-next-line no-continue
                     continue; // Skip lines containing '[' or ']'
                 }
 

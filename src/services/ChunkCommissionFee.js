@@ -25,8 +25,8 @@ export default class ChunkCommissionFee {
         this.fees = commissionFees;
     }
 
-    getFees() {
-        return this.fees;
+    getFeesCount() {
+        return this.fees.length;
     }
 
     print() {
