@@ -30,10 +30,10 @@
 
 ## 6. Error Handling and Logging
 - Error handling to be done.
-- Logging to be done (is used for debugging and monitoring purposes).
+- Logging to be done.
 
 ## 7. Performance Considerations
-- Introduction of `ChunkDataService enables reading large files in manageable chunks, optimizing performance for processing huge datasets.
+- Introduction of `ChunkDataService` enables reading large files in manageable chunks, optimizing performance and memory consumption for processing huge datasets.
 
 ## 8. Testing Strategy
 - Unit tests cover individual components, ensuring the correctness of fee calculations.

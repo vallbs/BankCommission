@@ -1,16 +1,21 @@
-# BankCommission
-
-# Calculation of bank commission fees
+# Bank Commission
 
 Calculation of bank commission fees
 
 ## Running the Application
 
+To run the application with consuming data from `input.json` file from the root folder
+
 ```bash
 npm start
 ```
 
-## Code Quality and Formatting
+## Running with a filename argument
+
+```bash
+node app.js <filename.json>
+node app.js input.json
+```
 
 ## Running Tests
 
@@ -20,6 +25,7 @@ To run the test suite, execute the following command:
 npm test
 ```
 
+## Code Quality and Formatting
 ### Run ESLint
 
 ```bash
