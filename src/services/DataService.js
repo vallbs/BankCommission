@@ -1,7 +1,9 @@
-import { data } from '../data/input.js';
-
 export default class DataService {
-    static getData() {
-        return data;
+    constructor(data) {
+        this.data = data;
+    }
+
+    getData() {
+        return this.data;
     }
 }
