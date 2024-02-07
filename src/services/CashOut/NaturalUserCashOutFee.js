@@ -8,17 +8,14 @@ export default class NaturalUserCashOutFee {
     }
 
     calculateFee() {
-        const {
-            user_id: userId,
-            date,
-            operation: { amount = 0 } = {},
-        } = this.payload;
+        const { user_id: userId, date } = this.payload;
         const amountSamePeriod =
             this.periodOperationsService.getUserPeriodAmount(userId, date);
         const allowedAmountWithNoCommission = Math.max(
             this.PERIOD_AMOUNT_NO_COMMISSION - amountSamePeriod,
             0,
         );
+        const amount = parseFloat(this.payload.operation.amount);
         const amountToChargeCommission =
             amountSamePeriod === 0 && amount === 1000
                 ? 0
