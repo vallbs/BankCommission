@@ -22,8 +22,4 @@ export default class PeriodOperationsService {
         const operationKey = this.getPeriodOperationKey(userId, date);
         this.operations.set(operationKey, value);
     }
-
-    clearPeriodOperations() {
-        this.operations = null;
-    }
 }

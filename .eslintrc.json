@@ -6,6 +6,8 @@
     "plugins": ["prettier"],
     "rules": {
         "prettier/prettier": "error",
-        "import/extensions": "off"
+        "import/extensions": "off",
+        "no-continue": "warn",
+        "no-restricted-syntax": "warn"
     }
 }

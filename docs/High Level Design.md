@@ -15,10 +15,11 @@
     - `JuridicalUserCashOutFee` and `NaturalUserCashOutFee`: Strategies for calculating cash-out fees for legal and natural persons.
   - **Commission Fee Calculation:**
     - `TypeFactory`: Factory for creating strategies based on operation types.
-    - `CommissionFee`: Orchestrates the commission fee calculation process.
+    - `ChunkCommissionFee`: Orchestrates the commission fee calculation process (by chunk data).
+    - `ChunkDataService`: Handles reading large files in chunks for efficient processing.
 
 ## 3. Data Flow
-- The system interacts with data through the `DataService`.
+- Data is processed by chunks (read from file) and after that commission fees are calculated for those chunks.
 
 ## 4. Configuration Management
 - Input data is getting from the file provided in node run command.
@@ -32,9 +33,7 @@
 - Logging to be done (is used for debugging and monitoring purposes).
 
 ## 7. Performance Considerations
-- **To be done. Edit this section on adding stream read of huge file of data**. 
-- Performance is optimized through efficient algorithms for fee calculation.
-- Caching mechanisms may be implemented to enhance performance.
+- Introduction of `ChunkDataService enables reading large files in manageable chunks, optimizing performance for processing huge datasets.
 
 ## 8. Testing Strategy
 - Unit tests cover individual components, ensuring the correctness of fee calculations.
